@@ -1,10 +1,16 @@
 .container {
-    padding: 80px 120px;
+    padding: 100px 120px;    
+}
+
+@font-face {
+    font-family: Geosans Light;
+   	font-style: normal;
+	src: local('GeosansLight'), url('GeosansLight.woff') format('woff');
 }
 
 body,
 h2{
-	font-family: Cambria;
+	font-family: Geosans Light;
 }
 
 h2{
@@ -12,11 +18,23 @@ font-weight: 700;
 }
 
 .typing h3{
-	font-weight: 500;
+	font-weight: 800;
 	font-size: 25px;
 	white-space:nowrap;
 	overflow:hidden;
-	animation: type 4s steps(60, end);
+	animation: type 4s steps(60, end);	
+}
+
+#about
+{
+background-color: #95A5A6;
+width: 100%;
+}
+
+#about
+{
+background-color: #95A5A6;
+width: 100%;
 }
 
 @keyframes type{ 
@@ -27,11 +45,11 @@ font-weight: 700;
 #slide {
 	
 	padding-top: 15px;
-	font-size: 15px;
+	font-size: 20px;
 	line-height: 24px;
-  width: 100%;
-  height: 100%;
-  animation: pulse 5s;
+  	width: 100%;
+  	height: 100%;
+  	animation: pulse 5s;
 }
 
 @keyframes pulse {
@@ -44,9 +62,11 @@ font-weight: 700;
 }
 
 #svgdiv{
-margin-left: ($spacer-x * .25) !important;
+	position: relative;
+	margin-left: ($spacer-x * .25) !important;
    height: 100%;
     width: 50%;
+    padding-right:50px;
 }
 
 #contact{
@@ -75,7 +95,7 @@ margin-left: ($spacer-x * .25) !important;
     line-height: 22px;
 }
 #contact>a{
-   margin-top: 15px;
+   	margin-top: 15px;
     font-size: 18px;
 }
 
@@ -97,27 +117,27 @@ margin-left: ($spacer-x * .25) !important;
 }
 
 #contact>a:nth-of-type(1):before, #contact>a:nth-of-type(1):after{
- width: 180px;
-  height: 10px;
+ 	width: 180px;
+  	height: 10px;
   
 }
 
 #contact>a:nth-of-type(2):before, #contact>a:nth-of-type(2):after{
- width: 112px;
-  height: 10px;
+ 	width: 112px;
+  	height: 10px;
   
 }
 
 #contact>a:nth-of-type(3):before, #contact>a:nth-of-type(3):after{
-  width: 166px;
-  height: 10px;
+  	width: 166px;
+  	height: 10px;
 }
 
 #contact>a:before {
-  left: 0;
-  bottom: 0;
-  border-bottom-width: 1px;
-  border-left-width: 1px;
+  	left: 0;
+  	bottom: 0;
+  	border-bottom-width: 1px;
+  	border-left-width: 1px;
 }
 
 #contact>a:after {
@@ -230,24 +250,24 @@ margin-left: ($spacer-x * .25) !important;
   animation-fill-mode: forwards;
   border-color: #f1f1f1;
 }
+
 #resume:hover a:after{
   animation-delay: .3s;
-
-
 }
+
 #resume:hover:after{
   animation-delay: .4s;
-
 }
+
 #resume:hover a:before{
   animation-delay: .7s;
-
 }
 
 @keyframes zoop-horizontal{
   0%{width: 0px;}
   100%{width: 200px;}
 }
+
 @keyframes zoop-vertical{
   0%{height: 0px;}
   100%{height: 60px;}
@@ -258,12 +278,12 @@ margin-left: ($spacer-x * .25) !important;
     padding-top: 3px;
     width: 44px;
 }
-#linkedin:hover .hover-icon{
-	
+
+#linkedin:hover .hover-icon{	
   border-color: #dae5e8;
 }
-#linkedin .hover-icon{
-  
+
+#linkedin .hover-icon{ 
   width: 44px;
   height: 44px;
 }
@@ -273,18 +293,18 @@ margin-left: ($spacer-x * .25) !important;
     padding-top: 3px;
     width: 44px;
 }
+
 #github:hover .hover-icon{
-	
   border-color: #dae5e8;
 }
-#github .hover-icon{
-  
+
+#github .hover-icon{ 
   width: 44px;
   height: 44px;
 }
 
 #icons{
-      margin-top: 30px;
+	margin-top: 30px;
 }
 
 .icon{
@@ -294,25 +314,23 @@ margin-left: ($spacer-x * .25) !important;
 }
 
 .hover-icon{
-  border: 3px solid transparent;
-      width: 80%;
-      height: 80%;
-      opacity: 0.8
+  	border: 3px solid transparent;
+    width: 80%;
+    height: 80%;
+    opacity: 0.8
 }   
       
 
 .containerclass{
     font-family: Cambria;
-    top: 7%;
+    top: 0%;
+    bottom: 0%;
     width: 50%;
 	height: 100%;
     box-sizing: border-box;
     left: 48%;
     padding: 10px;
-    /*padding-right: 25px;
-    border-radius: 20px;*/
-    background: rgba(255,255,255,.7);
-
+    background: #95A5A6;
 }
 
 .navbar {
